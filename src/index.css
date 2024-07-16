@@ -1,13 +1,173 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Quicksand";
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #b3c9cb;
+}
+
+.App {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 93%;
+  height: 900px;
+  margin-top: 1.5%;
+  margin-left: 3.5%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.container {
+  margin-left: 30px;
+  width: 500px;
+  height: 850px;
+}
+
+.logo {
+  margin-bottom: 60px;
+  width: 160px;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  background-color: #b3c9cb;
+  font-size: 32px;
+}
+
+.text-logo {
+  text-align: center;
+}
+
+.infomation {
+  display: flex;
+  height: 350px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 70px;
+  overflow-wrap: break-word;
+}
+
+.text {
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+
+.button ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+.button ul li {
+  margin-top: 90px;
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 30px;
+  width: 180px;
+  height: 90px;
+}
+
+.login {
+  text-decoration: underline;
+  background-color: #27727d;
+  color: white;
+}
+
+.sign-in {
+  margin-left: 38px;
+  background-color: #dde4e6;
+  color: #27727d;
+}
+
+.login:hover, .sign-in:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.login a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sign-in a {
+  color: #27727d;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.image {
+  display: flex;
+}
+
+@media only screen and (min-width: 1600px) {
+  .App {
+    padding: 65px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .App {
+    padding: 45px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .image {
+    display: none;
+  }
+
+  .App {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sign-in {
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 350px;
+    height: 150px;
+  }
+  .container {
+    margin-left: 10px;
+    width: 450px;
+    height: 850px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    margin-left: 0px;
+    width: 390px;
+    height: 750px;
+  }
+  h1 {
+    margin-top: 0px;
+    font-size: 70px;
+    overflow-wrap: break-word;
+  }
 }
