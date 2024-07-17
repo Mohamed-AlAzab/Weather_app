@@ -5,7 +5,7 @@ const Signin = () => {
   return (
     <div className="signin-container">
       <form id="form" action="/">
-        <h1>Sign In</h1>
+        <h1>Sign up</h1>
         <div class="input-control">
           <input
             id="username"
@@ -45,7 +45,7 @@ const Signin = () => {
         <div class="button-r">
           <ul>
             <li className="signin-r">
-              <Link to="/">Sign In</Link>
+              <Link to="/">Sign up</Link>
             </li>
           </ul>
         </div>

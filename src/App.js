@@ -2,8 +2,9 @@ import './index.css';
 import Main from './Main.js'
 import Image from './Image.js'
 import Login from './Login.js'
+import Signup from './Signup.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Signin from './Signin.js';
+
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
             <Login />
             <Image />
           </Route>
-          <Route  path='/Signin'>
-            <Signin />
+          <Route  path='/Signup'>
+            <Signup />
             <Image />
           </Route>
         </Switch>

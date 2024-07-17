@@ -33,8 +33,8 @@ const Login = () => {
           <div className="info">
             <p>
               Create account ?{" "}
-              <Link className="link" to="/Signin">
-                Signin
+              <Link className="link" to="/Signup">
+                Signup
               </Link>
             </p>
           </div>

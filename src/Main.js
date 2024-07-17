@@ -20,7 +20,7 @@ const Main = () => {
       <div className="button">
         <ul>
           <li className='login'><Link to="./Login">Login</Link></li>
-          <li className='signin'><Link to="/Signin">Sign in</Link></li>
+          <li className='signin'><Link to="/Signup">Sign up</Link></li>
         </ul>
       </div>
     </div>
