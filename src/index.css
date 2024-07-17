@@ -81,6 +81,7 @@ h1 {
   font-size: 30px;
   width: 180px;
   height: 90px;
+  contain: content;
 }
 
 .login {
@@ -89,14 +90,15 @@ h1 {
   color: white;
 }
 
-.sign-in {
+.signin {
   margin-left: 38px;
   background-color: #dde4e6;
   color: #27727d;
 }
 
-.login:hover, .sign-in:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+.login:hover,
+.signin:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login a {
@@ -106,7 +108,7 @@ h1 {
   display: inline-block;
 }
 
-.sign-in a {
+.signin a {
   color: #27727d;
   text-align: center;
   text-decoration: none;
@@ -171,3 +173,84 @@ h1 {
     overflow-wrap: break-word;
   }
 }
+
+/* Start Style Sign in */
+#form {
+  width: 350px;
+  background-color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+
+#form h1 {
+  text-align: center;
+  color: black;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  margin: 10px 10px 10px 0px;
+  font-size: 14px;
+  border-radius: 8px;
+  display: block;
+  border: 2px solid #f0f0f0;
+  padding: 10px;
+  width: 100%;
+}
+
+.button-r ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+.button-r ul li {
+  padding: 7px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+}
+
+.login-r, .signin-r {
+  background-color: #27727d;
+  color: white;
+}
+
+.login-r:hover,
+.signin-r:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-r a, .signin-r a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.info .link {
+  color: #27727d;
+}
+
+@media only screen and (max-width: 375px) {
+  #form {
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  #form {
+    width: 270px;
+  }
+}
+/* End Style Sign in */

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'; 
 import './index.css';
 
 const Main = () => {
@@ -18,8 +19,8 @@ const Main = () => {
 
       <div className="button">
         <ul>
-          <li className='login'><a href="/">Login</a></li>
-          <li className='sign-in'><a href="/">Sign in</a></li>
+          <li className='login'><Link to="./Login">Login</Link></li>
+          <li className='signin'><Link to="/Signin">Sign in</Link></li>
         </ul>
       </div>
     </div>
