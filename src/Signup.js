@@ -44,7 +44,7 @@ const Signin = () => {
         </div>
         <div class="button-r">
           <ul>
-            <li className="signin-r">
+            <li className="signup-r">
               <Link to="/">Sign up</Link>
             </li>
           </ul>
