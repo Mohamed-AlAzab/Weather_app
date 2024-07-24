@@ -92,11 +92,11 @@ h1 {
   background-color: #246a75;
 }
 
-.button .signup:hover{
+.button .signup:hover {
   background-color: #cad3d5;
 }
 
-.signup  {
+.signup {
   color: #27727d;
   text-align: center;
   text-decoration: none;
@@ -300,7 +300,7 @@ h1 {
   height: 40px;
   font-size: 20px;
 }
-.button-g .google-button:hover{
+.button-g .google-button:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -314,7 +314,167 @@ h1 {
 
 /* start Error and succeed password*/
 
-
-
-
 /*  End Error and succeed password  */
+
+/* start style Home bage */
+
+.navBar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+.homeLogo {
+  border-radius: 0px 8px 8px 0px;
+  background-color: #27727d;
+}
+
+h2 {
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.navBar .homeButton {
+  padding: 13px 13px 13px 0px;
+  width: 120px;
+  display: flex;
+  justify-content: end;
+}
+
+.homeButton button {
+  width: 100%;
+  background-color: #27727d;
+  color: white;
+  text-transform: none;
+  font-size: 18px;
+}
+
+.homeButton button:hover {
+  background-color: #246a75;
+}
+
+.homeContainer {
+  width: 445px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.search .searchButton {
+  width: 20px;
+  background-color: #27727d;
+  color: white;
+  text-transform: none;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.search .searchButton:hover {
+  background-color: #246a75;
+}
+
+.search .convertButton {
+  width: 20px;
+  background-color: #27727d;
+  color: black;
+  text-transform: none;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.search .convertButton:hover {
+  background-color: #246a75;
+}
+
+.cardInfo {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #246a75;
+  text-align: center;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.cardInfo .city {
+  padding-top: 40px;
+  font-size: 24px;
+}
+
+.cardInfo .temp {
+  font-size: 90px;
+  background: linear-gradient( white, white, rgb(106, 147, 153), #27727d);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.cardInfo .state {
+  margin-top: -80px;
+  width: 40%;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.discriptionHumidity {
+  padding-top: 4px;
+}
+
+@media only screen and (max-width: 445px) {
+  .homeContainer{
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .homeContainer{
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .homeContainer{
+    width: 310px;
+  }
+  .cardInfo .temp {
+    font-size: 70px;
+  }
+}
+
+/*  End style Home bage  */

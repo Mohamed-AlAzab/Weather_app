@@ -10,6 +10,7 @@ import {
 } from "firebase/auth";
 import icon from "./Photo/google-logo.png";
 import { doc, setDoc } from "firebase/firestore";
+import Image from "./Image.js";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -39,57 +40,59 @@ const Login = () => {
     }
   };
   return (
-    <div className="login-container">
-      <form id="form" action="/">
-        <h1>Login</h1>
-        <div class="input-control">
-          {/* input email */}
-          <input
-            type="text"
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          {/* input password */}
-          <input
-            type="password"
-            placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <div class="button-r">
-          <Button
-            onClick={logIn}
-            variant="contained"
-            className="login-r"
-            // href="/"
-          >
-            Login
-          </Button>
-        </div>
-        <div className="info">
-          <p>
-            Create account ?{" "}
-            <Link className="link" to="/Signup">
-              Signup
-            </Link>
-          </p>
-        </div>
-        <div className="or-line">
-          <span className="line">-------------</span>
-          <span>or</span>
-          <span className="line">-------------</span>
-        </div>
-        <div class="button-g">
-          <Button
-            variant="contained"
-            className="google-button"
-            onClick={googleSignup}
-          >
-            <img src={icon} alt="logo" />
-            Login With Google
-          </Button>
-        </div>
-      </form>
+    <div className="App">
+      <div className="login-container">
+        <form id="form" action="/">
+          <h1>Login</h1>
+          <div class="input-control">
+            {/* input email */}
+            <input
+              type="text"
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {/* input password */}
+            <input
+              type="password"
+              placeholder="Password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <div class="button-r">
+            <Button
+              onClick={logIn}
+              variant="contained"
+              className="login-r"
+            >
+              Login
+            </Button>
+          </div>
+          <div className="info">
+            <p>
+              Create account ?{" "}
+              <Link className="link" to="/Signup">
+                Signup
+              </Link>
+            </p>
+          </div>
+          <div className="or-line">
+            <span className="line">-------------</span>
+            <span>or</span>
+            <span className="line">-------------</span>
+          </div>
+          <div class="button-g">
+            <Button
+              variant="contained"
+              className="google-button"
+              onClick={googleSignup}
+            >
+              <img src={icon} alt="logo" />
+              Login With Google
+            </Button>
+          </div>
+        </form>
+      </div>
+      <Image />
     </div>
   );
 };

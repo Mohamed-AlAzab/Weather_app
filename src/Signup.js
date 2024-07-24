@@ -10,6 +10,7 @@ import {
 import React, { useState } from "react";
 import { setDoc, doc } from "firebase/firestore";
 import icon from "./Photo/google-logo.png";
+import Image from "./Image.js";
 
 const Signup = () => {
   const [username, setUsername] = useState("");
@@ -43,7 +44,7 @@ const Signup = () => {
           });
         }
         console.log("User Registered Successfully!!");
-        alert("Successfully! Go to login");
+        window.location.href = "/Home";
       } catch (error) {
         console.error(error);
       }
@@ -53,67 +54,70 @@ const Signup = () => {
   };
 
   return (
-    <div className="signin-container">
-      <form id="form">
-        <h1>Sign up</h1>
-        <div class="input-control">
-          {/* input username */}
-          <input
-            placeholder="Username"
-            onChange={(e) => setUsername(e.target.value)}
-          />
+    <div className="App">
+      <div className="signin-container">
+        <form id="form">
+          <h1>Sign up</h1>
+          <div class="input-control">
+            {/* input username */}
+            <input
+              placeholder="Name"
+              onChange={(e) => setUsername(e.target.value)}
+            />
 
-          {/* input email */}
-          <input
-            placeholder="Email Address"
-            onChange={(e) => setEmail(e.target.value)}
-          />
+            {/* input email */}
+            <input
+              placeholder="Email Address"
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-          {/* input password */}
-          <input
-            type="password"
-            placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
+            {/* input password */}
+            <input
+              type="password"
+              placeholder="Password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
-          {/* input Repeat password */}
-          <input
-            type="password"
-            placeholder="confirm password"
-            onChange={(e) => setPasswordC(e.target.value)}
-          />
-        </div>
+            {/* input Repeat password */}
+            <input
+              type="password"
+              placeholder="confirm password"
+              onChange={(e) => setPasswordC(e.target.value)}
+            />
+          </div>
 
-        <div class="button-r">
-          <Button onClick={signUp} variant="contained" className="signin-r">
-            Sign up
-          </Button>
-        </div>
+          <div class="button-r">
+            <Button onClick={signUp} variant="contained" className="signin-r">
+              Sign up
+            </Button>
+          </div>
 
-        <div className="info">
-          <p>
-            Did you have account ?{" "}
-            <Link className="link" to="/Login">
-              Login
-            </Link>
-          </p>
-        </div>
-        <div className="or-line">
-          <span className="line">-------------</span>
-          <span>or</span>
-          <span className="line">-------------</span>
-        </div>
-        <div class="button-g">
-          <Button
-            variant="contained"
-            className="google-button"
-            onClick={googleSignup}
-          >
-            <img src={icon} alt="logo" />
-            Sign up With Google
-          </Button>
-        </div>
-      </form>
+          <div className="info">
+            <p>
+              Did you have account ?{" "}
+              <Link className="link" to="/Login">
+                Login
+              </Link>
+            </p>
+          </div>
+          <div className="or-line">
+            <span className="line">-------------</span>
+            <span>or</span>
+            <span className="line">-------------</span>
+          </div>
+          <div class="button-g">
+            <Button
+              variant="contained"
+              className="google-button"
+              onClick={googleSignup}
+            >
+              <img src={icon} alt="logo" />
+              Sign up With Google
+            </Button>
+          </div>
+        </form>
+      </div>
+      <Image />
     </div>
   );
 };
