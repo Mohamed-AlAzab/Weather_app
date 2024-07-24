@@ -72,7 +72,7 @@ const Home = () => {
         <>
           <nav className="navBar">
             <div className="homeLogo">
-              <h2>Weather App</h2>
+              <h2>Weather News</h2>
             </div>
             <div className="homeButton">
               <Button onClick={LogOut} variant="contained" className="logout">
