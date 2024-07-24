@@ -9,7 +9,7 @@ const Main = () => {
     <div className="App">
       <div className="container">
         <div className="logo">
-          <p className="text-logo">Weather</p>
+          <p className="text-logo">Weather News</p>
         </div>
 
         <div className="infomation">
