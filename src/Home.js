@@ -144,7 +144,7 @@ const Home = () => {
           </div>
         </>
       ) : (
-        <p>Loading...</p>
+        <p className="loading">Loading...</p>
       )}
     </div>
   );

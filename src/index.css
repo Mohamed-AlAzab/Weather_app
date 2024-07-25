@@ -348,6 +348,12 @@ h2 {
   justify-content: end;
 }
 
+.loading {
+  font-size: 32px;
+  margin-top: 15%;
+  text-align: center;
+}
+
 .homeButton button {
   width: 100%;
   background-color: #27727d;
