@@ -10,7 +10,7 @@ import ImgWindSpeed from "./Photo/windSpeed.png";
 import ImgPressure from "./Photo/pressure.png";
 
 const Home = () => {
-  const [city, setCity] = useState("Alexandria");
+  const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
   const [userDetails, setUserDetails] = useState(null);
@@ -100,7 +100,7 @@ const Home = () => {
                   className="convertButton"
                 >{`°${units === "metric" ? "C" : "F"}`}</Button>
               </div>
-              {weather && (
+              {weather ? (
                 <div className="cardInfo">
                   <h3 className="city">{`${weather.name}, ${weather.country}`}</h3>
                   <h3 className="discription">{`${weather.description}`}</h3>
@@ -139,7 +139,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              )}
+              ) : (<></>)}
             </div>
           </div>
         </>
